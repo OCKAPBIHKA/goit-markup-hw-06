@@ -27,6 +27,8 @@ h5 {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -231,6 +233,8 @@ img {
   /* gap: 24px; */
   gap: 72px;
   flex-direction: column;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
 .link-advantages {
@@ -371,11 +375,14 @@ img {
 /* ------------------SECTION4------------------ */
 .section-portfolio {
   background: #FFF;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 
-.container-portfolio {}
+.container-portfolio {
+  padding-top: 96px;
+  padding-bottom: 96px;
+  /* padding-top: 120px; */
+  /* padding-bottom: 120px; */
+}
 
 .our-portfolio {
   color: #2E2F42;
@@ -390,9 +397,10 @@ img {
 
 .list-portfolio {
   display: flex;
-  column-gap: 24px;
-  row-gap: 48px;
+  /* column-gap: 24px; */
+  /* row-gap: 48px; */
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .container-card {
@@ -402,7 +410,9 @@ img {
 }
 
 .link-portfolio {
-  width: calc((100% - 24px * 2) / 3);
+  /* width: calc((100% - 24px * 2) / 3); */
+  width: 288px;
+  margin-bottom: 48px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -955,7 +965,38 @@ img {
 
   }
 
-  /* ---Section2----- */
+  /* -------Section2----------- */
+  .list-advantages {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 72px 24px;
+
+  }
+
+  .link-advantages {
+    width: 356px;
+  }
+
+  .name-advantages {
+    color: #2E2F42;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+
+  .text-advantages {
+    color: #434455;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  /* ---Section3----- */
   .list-team {
     gap: 24px;
     row-gap: 64px;
@@ -963,7 +1004,20 @@ img {
     flex-direction: row;
     justify-content: center;
   }
+
+  /* -------Section4--------- */
+  .list-portfolio {
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .link-portfolio {
+    margin-bottom: 0;
+    width: calc((100% - 24px * 3) / 2);
+
+  }
 }
+
 
 
 /* <<<<<<-------------DESKTOP----------->>>>>>>>> */
@@ -1069,4 +1123,25 @@ img {
   }
 
   .link-team {}
+
+  /* ---------Section4--------- */
+  .section-portfolio {
+    background: #FFF;
+  }
+
+  .container-portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .list-portfolio {
+    column-gap: 24px;
+    row-gap: 48px;
+  }
+
+  .link-portfolio {
+    width: calc((100% - 24px * 2) / 3);
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
